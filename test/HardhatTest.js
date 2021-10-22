@@ -5,7 +5,7 @@ contract('Counter', async () => {
         this.counter = await Counter.new();
     });
     describe('Test interval mining', () => {
-        it('Should double the counter in one block', async function () {
+        it('Should perform two transactions in one block', async function () {
             const task1 = this.counter.plusOne();
             const task2 = this.counter.plusOne();
 
